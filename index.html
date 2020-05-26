@@ -34,6 +34,48 @@
   <div class="slideLeft">
    <div class="Titol_1">Presentació</div>
     </div>
+    <div class="slider-gran">
+                   <div class="container-display">
+            <img class="mySlides" src="Media/sliderfotos/Casa_darrera.jpg" style="width:100%">
+            <img class="mySlides" src="Media/sliderfotos/Casa_davant.jpg" style="width:100%">
+            <img class="mySlides" src="Media/sliderfotos/Dron.jpg" style="width:100%">
+            <img class="mySlides" src="Media/sliderfotos/Drac.JPG" style="width:100%">
+            <img class="mySlides" src="Media/sliderfotos/Logos.png" style="width:100%">
+            <img class="mySlides" src="Media/sliderfotos/Pilota%20terra.jpg" style="width:100%">
+            <img class="mySlides" src="Media/sliderfotos/tio_edit.png" style="width:55%" >
+
+            <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+            
+            
+            
+        </div>
 <div class="container_flex">
         
     <div class="Text_Presentacio">

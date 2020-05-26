@@ -100,6 +100,99 @@ A:link {
     font-family: 'Arvo', serif;
 }
 
+
+
+.mySlides {
+    display: none;
+    border-radius: 20px;
+
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.container-display {
+    position: relative;
+            display: flex;
+    justify-content: center;
+    /*indicador*/
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+.container-text {
+    text-align: left;
+    /*indicador*/
+    margin: 5px;
+    border: 1px dashed purple;
+}
+
+.boton-slider {
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+}
+
+
+
+
+.fletxaDreta-slider {
+    left: 0%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    margin-left: 2px;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: orange;
+    color: white;
+    transition-duration: .5;
+    transform-origin: center;
+    transition-property: all;
+}
+
+.fletxaEsquerra-slider {
+    right: 0%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    margin-left: 2px;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: orange;
+    color: white;
+    transition-duration: 2;
+    transition-property: all;
+}
+
+.fletxaDreta-slider:hover {
+    transform: scale(1.3);      
+    border: 2px solid black;
+    color: black; 
+    
+}
+
+.fletxaEsquerra-slider:hover {
+    transform: scale(1.3);  
+    border: 2px solid black;
+    color: black;
+    
+}
+
+.boto{ padding: 10px 60px; 
+    border-radius: 4px; 
+    background-color: red; 
+    transition-duration: .4s; 
+    transition-property: all; } 
+
+.boto:hover{ border-radius: 20px; 
+    background-color: blue; }
+
+
+
 #Presentacio_Apartat,#Demo_Apartat,#Eines_Apartat,#Contacte_Apartat,.Footer {
     background-color: lightgoldenrodyellow;
     color: black; 
