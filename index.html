@@ -1,11 +1,114 @@
+<!--Afegeix un slider i passa el corrector, de la tipografia que has fet servir afegeix una més negreta per destacar alguns textos-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Portfoli Miquel Campderrós</title>
+    <link rel="stylesheet" href="CSS/estils.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Quattrocento&display=swap" rel="stylesheet">
+               
+    <script src="js/jquery.js"></script>
+         <!--Plugins-->
+
+ <!---->
 </head>
 <body>
+<div class="General">
+<div class="Titol">
+<h1>Miquel Campderrós</h1>
+<img src="Media/giphy.gif" class="Gato">
+</div>
+<br>
+<div class="Menu">
+    <button class="Presentacio"  type="button" onclick="location.href='#Presentacio_Apartat'"> Presentació</button>
+    <button class="Demo" type="button" onclick="location.href='#Demo_Apartat'">Demo Reel</button>
+    <button class="Eines" type="button" onclick="location.href='#Eines_Apartat'">Eines</button>
+    <button class="Contacte" type="button" onclick="location.href='#Contacte_Apartat'">Contacte</button>
+    
+</div>
+<br>
 
-   <h1>El meu Portfoli</h1>
+<div id="Presentacio_Apartat">
+  <div class="slideLeft">
+   <div class="Titol_1">Presentació</div>
+    </div>
+<div class="container_flex">
+        
+    <div class="Text_Presentacio">
+    <h2 class="tit flexed_1">Bones!</h2>
+    <p class=" flexed_2"> Hola, soc en Miquel Campderrós un estudiant de 1r curs de un CFGS de Animació 3D i entorns virtuals. Al completar un CFGM de Sistemes Microinformàtics i Xarxes em vaig adonar que prefería ambientar el meu futur en un ambit més artístic i cap a l'apartat de videojocs.</p>
+    </div>
+    </div>
+</div>
+<br>
+<div id="Demo_Apartat">
+  <div class="slideLeft">
+   <div class="Titol_2">Demo_Reel</div>
+    </div>
+ <div class="contenidor-video">
+    <video controls width="100%">
+<source src="Media/video_paco.webm"  type="video/mp4">
+<track autoplay label="Català" kind="subtitles" srclang="cat" src="Subtitols/subtitols_cat.vtt">
+</video>
+</div>
+   
+    <div class="Text_Demo">
+    
+    <p>Aquest és un demoreel meu de alguns dels treballs amb millor resultat que he fet a classe.Conté feines de les diferents branques principals d'aquest curs, per tant ni han fets amb Maya, altres amb Photoshop i altres amb Ilustrator.</p>
+    </div>
+   </div>
+<!-- He eliminat el emdia element -->
+
+<div id="Eines_Apartat"><!-- he afegit una mica de margin-->
+  <div class="slideLeft">
+   <div class="Titol_3">Eines</div>
+   </div>
+    <div class="Text_Eines" >
+    <div class="text_bo_eines"> 
+       <h2></h2>  
+        <p>Durant aquest curs he aprés nocions bàsiques i algunes avançades dels programes indicats en aquest apartat.  </p>
+        <img src="Media/walk.gif" width="100%" class="walk">
+    </div>
+        <div class="imatges_eines">
+           <div class="fotos_eines">
+            <span data-title="HTML"><img src="Media/html.svg" class="img_photo"></span>
+            <span data-title="CSS"><img src="Media/css.svg" class="img_photo"></span>
+           </div>
+           <div class="fotos_eines">
+            <span data-title="Photoshop"><img src="Media/pHOTO.svg" class="img_photo"></span>
+            <span data-title="Ilustrator"><img src="Media/ILUS.png" class="img_ilus"></span>
+            <span data-title="Premier"><img src="Media/PREMIER.svg" class="img_prem"></span>
+           </div>
+           <div class="fotos_eines">
+            <span data-title="Maya 3D"><img src="Media/MAYA.svg" class="img_maya"></span>
+            <span data-title="Unity"><img src="Media/uNITY.svg" class="img_unity"></span>
+           </div>
+     </div>
+    </div>
+</div>
+<br>
+<div id="Contacte_Apartat">
+  <div class="slideLeft">
+   <div class="Titol_4">Digues Hola</div>
+    </div>
+    <div class="Contacte-all">
+
+    <p>Si vols contactar-me per comentar qualsevol cosa, saber més sobre els meus projectes o simplement saber qui soc, escriume omplint el formulari del costat.  </p>
+    
+
+    </div>
+</div>
+<br>
+<div class="Footer">
+    <div class="Correu"><img src="Media/EMAIL.svg" class="img_mail">:  asdada@gmail.com</div>
+    <div class="Instagram"><img src="Media/INSTA.svg" class="img_insta">:  @sdvesf</div>
+    <div class="Whats-App"><img src="Media/WHATS.svg" class="img_whats">:  +34 364763622</div>
+</div>
+
+
+
+    </div>
 </body>
 </html>
