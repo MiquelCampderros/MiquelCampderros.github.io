@@ -8,6 +8,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
+}
+
+h1 {
+    line-height: 1em;
 }
 
 .Gato {
@@ -120,6 +125,7 @@ A:link {
     margin: 20px;
     border-radius: 20px;
     padding: 20px;
+
 
 }
 
@@ -364,6 +370,7 @@ video {
 }
 
 .Footer {
+    width: 100%;
 display: flex;
 flex-wrap:wrap;
 justify-content: space-around;
@@ -387,13 +394,15 @@ width: 30px;
     margin-top: -6px;
 }
 
+.thximg {   
+    width: 100%;
+}
+.thx {
+   width: 60%; 
+    margin: auto;
+}
 
 
 
 
 
-
-@media (width< 600px) {
-  .Contacte_all {
-    display: block;
-  }
